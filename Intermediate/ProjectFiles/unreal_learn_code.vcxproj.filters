@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<None Include="..\..\unreal_learn_code.uproject" />
+		<Filter Include="Source">
+			<UniqueIdentifier>{9CC6875B-95C9-4252-B4AF-E6DBD963B961}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\unreal_learn_code.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<None Include="..\..\Source\unreal_learn_codeEditor.Target.cs">
+			<Filter>Source</Filter>
+		</None >
+		<Filter Include="Config">
+			<UniqueIdentifier>{85882AD7-76F3-4BED-853E-A78ADDD8B372}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Config\DefaultEditor.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultEngine.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultGame.ini">
+			<Filter>Config</Filter>
+		</None >
+		<None Include="..\..\Config\DefaultInput.ini">
+			<Filter>Config</Filter>
+		</None >
+		<Filter Include="Source\unreal_learn_code">
+			<UniqueIdentifier>{0372A9B3-DE8B-4486-B394-CF77D3D78FF7}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\unreal_learn_code\unreal_learn_code.Build.cs">
+			<Filter>Source\unreal_learn_code</Filter>
+		</None >
+		<Filter Include="Source\unreal_learn_code\Private">
+			<UniqueIdentifier>{244CA1A5-86D7-4BE7-8908-EFF76696E6DB}</UniqueIdentifier>
+		</Filter>
+		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_code.cpp">
+			<Filter>Source\unreal_learn_code\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeCharacter.cpp">
+			<Filter>Source\unreal_learn_code\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeGameMode.cpp">
+			<Filter>Source\unreal_learn_code\Private</Filter>
+		</ClCompile >
+		<Filter Include="Source\unreal_learn_code\Public">
+			<UniqueIdentifier>{848BC806-D7CE-43C8-98C3-B4CBC26D07EC}</UniqueIdentifier>
+		</Filter>
+		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_code.h">
+			<Filter>Source\unreal_learn_code\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_codeCharacter.h">
+			<Filter>Source\unreal_learn_code\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_codeGameMode.h">
+			<Filter>Source\unreal_learn_code\Public</Filter>
+		</ClInclude >
+		<Filter Include="Source\unreal_learn_code\Resources">
+			<UniqueIdentifier>{35175CEF-0BB6-4B69-8398-E14DDA3708DA}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="Source\unreal_learn_code\Resources\Windows">
+			<UniqueIdentifier>{4305B062-1EFA-437E-8FAF-23BD38F72FD6}</UniqueIdentifier>
+		</Filter>
+		<None Include="..\..\Source\unreal_learn_code\Resources\Windows\unreal_learn_code.ico">
+			<Filter>Source\unreal_learn_code\Resources\Windows</Filter>
+		</None >
+		<ResourceCompile Include="..\..\Source\unreal_learn_code\Resources\Windows\unreal_learn_code.rc">
+			<Filter>Source\unreal_learn_code\Resources\Windows</Filter>
+		</ResourceCompile >
+	</ItemGroup>
+</Project>
