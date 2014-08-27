@@ -2,6 +2,7 @@
 
 #include "unreal_learn_code.h"
 #include "unreal_learn_codeCharacter.h"
+#include "BatteryPickup.h"
 
 //////////////////////////////////////////////////////////////////////////
 // Aunreal_learn_codeCharacter
@@ -9,6 +10,22 @@
 Aunreal_learn_codeCharacter::Aunreal_learn_codeCharacter(const class FPostConstructInitializeProperties& PCIP)
 	: Super(PCIP)
 {
+
+
+	// Set a base power level for the character
+	PowerLevel = 2000.f;
+	// Set the dependence of speed on the power level
+	SpeedFactor = 0.75f;
+	BaseSpeed = 10.0f;
+
+	// Create out battery collection volume
+	CollectionSphere = PCIP.CreateDefaultSubobject<USphereComponent>(this, TEXT("CollectionSphere"));
+	CollectionSphere->AttachTo(RootComponent);
+	CollectionSphere->SetSphereRadius(200.f);
+
+
+
+
 	// Set size for collision capsule
 	CapsuleComponent->InitCapsuleSize(42.f, 96.0f);
 
@@ -50,6 +67,8 @@ void Aunreal_learn_codeCharacter::SetupPlayerInputComponent(class UInputComponen
 	// Set up gameplay key bindings
 	check(InputComponent);
 	InputComponent->BindAction("Jump", IE_Pressed, this, &ACharacter::Jump);
+
+	InputComponent->BindAction("CollectPickups", IE_Pressed, this, &Aunreal_learn_codeCharacter::CollectBatteries);
 
 	InputComponent->BindAxis("MoveForward", this, &Aunreal_learn_codeCharacter::MoveForward);
 	InputComponent->BindAxis("MoveRight", this, &Aunreal_learn_codeCharacter::MoveRight);
@@ -115,4 +134,44 @@ void Aunreal_learn_codeCharacter::MoveRight(float Value)
 		// add movement in that direction
 		AddMovementInput(Direction, Value);
 	}
+}
+void Aunreal_learn_codeCharacter::CollectBatteries()
+{
+	float BatteryPower = 0.f;
+
+	// Get all overlapping actors and store them in a CollectedActors array
+	TArray<AActor*> CollectedActors;
+	CollectionSphere->GetOverlappingActors(CollectedActors);
+
+	// For Each actors collected
+	for (int32 iCollected = 0; iCollected < CollectedActors.Num(); ++iCollected)
+	{
+		// Cast the collected actor to ABatteryPickup
+		ABatteryPickup* const TestBattery = Cast<ABatteryPickup>(CollectedActors[iCollected]);
+
+		// If the cast is successful, and the battery is valid and active
+		if (TestBattery && !TestBattery->IsPendingKill() && TestBattery->bIsActive)
+		{
+			// Store its battery power for adding to the character's power
+			BatteryPower = BatteryPower + TestBattery->PowerLevel;
+			// Deactivate the battery
+			TestBattery->bIsActive = false;
+			// Call the battery's OnPickedUp function
+			TestBattery->OnPickedUp();
+			
+		}
+
+	}
+
+	if (BatteryPower > 0.f)
+	{
+		// Call the Blueprinted implementation of PowerUp with the total battery power as input
+		PowerUp(BatteryPower);
+	}
+
+}
+void Aunreal_learn_codeCharacter::Tick(float DeltaSeconds)
+{
+	Super::Tick(DeltaSeconds);
+	CharacterMovement->MaxWalkSpeed = SpeedFactor * PowerLevel + BaseSpeed;
 }

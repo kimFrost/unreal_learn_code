@@ -25,11 +25,13 @@ APickup::APickup(const class FPostConstructInitializeProperties& PCIP)
 	// Attach the StaticMeshComponent to the root component
 	PickupMesh->AttachTo(RootComponent);
 
+	
+
 }
 
 void APickup::OnPickedUp_Implementation()
 {
-	// Thereis no default behavior for a Pickup when it is picked up.
+	// There is no default behavior for a Pickup when it is picked up.
 
 }
 
