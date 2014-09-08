@@ -19,5 +19,6 @@ class UNREAL_LEARN_CODE_API ABatteryPickup : public APickup
 
 	/** Override the OnPickedUp function (Use Implementation because this is a BlueprintNativeEvent) */
 	void OnPickedUp_Implementation() override;
+
 	
 };

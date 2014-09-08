@@ -4,7 +4,7 @@
 	<ItemGroup>
 		<None Include="..\..\unreal_learn_code.uproject" />
 		<Filter Include="Source">
-			<UniqueIdentifier>{BA0C0984-3877-4C71-B12F-C7EA3A61CB71}</UniqueIdentifier>
+			<UniqueIdentifier>{C95BB2BD-89AF-4141-AE95-D7B46C5277BA}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\unreal_learn_code.Target.cs">
 			<Filter>Source</Filter>
@@ -13,7 +13,7 @@
 			<Filter>Source</Filter>
 		</None >
 		<Filter Include="Config">
-			<UniqueIdentifier>{5A01D176-0582-4FC6-A982-5D2E10B9A34D}</UniqueIdentifier>
+			<UniqueIdentifier>{F3737B11-01F6-46A2-9203-AAAACF7F1BDC}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Config\DefaultEditor.ini">
 			<Filter>Config</Filter>
@@ -28,15 +28,18 @@
 			<Filter>Config</Filter>
 		</None >
 		<Filter Include="Source\unreal_learn_code">
-			<UniqueIdentifier>{D0C04096-C20A-4934-A5F1-C3DAA851680B}</UniqueIdentifier>
+			<UniqueIdentifier>{3DCAA502-C4CB-4A0A-9061-A0D39D21709D}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\unreal_learn_code\unreal_learn_code.Build.cs">
 			<Filter>Source\unreal_learn_code</Filter>
 		</None >
 		<Filter Include="Source\unreal_learn_code\Private">
-			<UniqueIdentifier>{0FA3AFB0-FD57-440E-9932-C19E5D9692C9}</UniqueIdentifier>
+			<UniqueIdentifier>{70C42212-716F-4F5A-8024-86DF8D4E7C58}</UniqueIdentifier>
 		</Filter>
 		<ClCompile Include="..\..\Source\unreal_learn_code\Private\BatteryPickup.cpp">
+			<Filter>Source\unreal_learn_code\Private</Filter>
+		</ClCompile >
+		<ClCompile Include="..\..\Source\unreal_learn_code\Private\HeightMapReader.cpp">
 			<Filter>Source\unreal_learn_code\Private</Filter>
 		</ClCompile >
 		<ClCompile Include="..\..\Source\unreal_learn_code\Private\Pickup.cpp">
@@ -52,9 +55,12 @@
 			<Filter>Source\unreal_learn_code\Private</Filter>
 		</ClCompile >
 		<Filter Include="Source\unreal_learn_code\Public">
-			<UniqueIdentifier>{D26EC360-A2EE-44D0-93D9-B2D322AAD5A1}</UniqueIdentifier>
+			<UniqueIdentifier>{E39C1B07-7018-4A20-850F-1A8B195BEC7A}</UniqueIdentifier>
 		</Filter>
 		<ClInclude Include="..\..\Source\unreal_learn_code\Public\BatteryPickup.h">
+			<Filter>Source\unreal_learn_code\Public</Filter>
+		</ClInclude >
+		<ClInclude Include="..\..\Source\unreal_learn_code\Public\HeightMapReader.h">
 			<Filter>Source\unreal_learn_code\Public</Filter>
 		</ClInclude >
 		<ClInclude Include="..\..\Source\unreal_learn_code\Public\Pickup.h">
@@ -70,10 +76,10 @@
 			<Filter>Source\unreal_learn_code\Public</Filter>
 		</ClInclude >
 		<Filter Include="Source\unreal_learn_code\Resources">
-			<UniqueIdentifier>{E2E23F6E-E949-4387-8C27-FFA84C2C7B12}</UniqueIdentifier>
+			<UniqueIdentifier>{A58C3012-58E9-46BF-8A15-AF998C4B2848}</UniqueIdentifier>
 		</Filter>
 		<Filter Include="Source\unreal_learn_code\Resources\Windows">
-			<UniqueIdentifier>{31508945-37EB-4006-8917-E94BCD0CADCC}</UniqueIdentifier>
+			<UniqueIdentifier>{502B52B3-8814-4AD0-A8BF-D9517DBBE1D3}</UniqueIdentifier>
 		</Filter>
 		<None Include="..\..\Source\unreal_learn_code\Resources\Windows\unreal_learn_code.ico">
 			<Filter>Source\unreal_learn_code\Resources\Windows</Filter>

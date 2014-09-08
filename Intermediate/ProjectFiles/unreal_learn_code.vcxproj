@@ -53,11 +53,13 @@
 		<None Include="..\..\Config\DefaultInput.ini" />
 		<None Include="..\..\Source\unreal_learn_code\unreal_learn_code.Build.cs" />
 		<ClCompile Include="..\..\Source\unreal_learn_code\Private\BatteryPickup.cpp" />
+		<ClCompile Include="..\..\Source\unreal_learn_code\Private\HeightMapReader.cpp" />
 		<ClCompile Include="..\..\Source\unreal_learn_code\Private\Pickup.cpp" />
 		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_code.cpp" />
 		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeCharacter.cpp" />
 		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeGameMode.cpp" />
 		<ClInclude Include="..\..\Source\unreal_learn_code\Public\BatteryPickup.h" />
+		<ClInclude Include="..\..\Source\unreal_learn_code\Public\HeightMapReader.h" />
 		<ClInclude Include="..\..\Source\unreal_learn_code\Public\Pickup.h" />
 		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_code.h" />
 		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_codeCharacter.h" />
