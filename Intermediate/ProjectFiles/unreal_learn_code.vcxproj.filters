@@ -1,91 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<None Include="..\..\unreal_learn_code.uproject" />
-		<Filter Include="Source">
-			<UniqueIdentifier>{C95BB2BD-89AF-4141-AE95-D7B46C5277BA}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\unreal_learn_code.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<None Include="..\..\Source\unreal_learn_codeEditor.Target.cs">
-			<Filter>Source</Filter>
-		</None >
-		<Filter Include="Config">
-			<UniqueIdentifier>{F3737B11-01F6-46A2-9203-AAAACF7F1BDC}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Config\DefaultEditor.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultEngine.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultGame.ini">
-			<Filter>Config</Filter>
-		</None >
-		<None Include="..\..\Config\DefaultInput.ini">
-			<Filter>Config</Filter>
-		</None >
-		<Filter Include="Source\unreal_learn_code">
-			<UniqueIdentifier>{3DCAA502-C4CB-4A0A-9061-A0D39D21709D}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\unreal_learn_code\unreal_learn_code.Build.cs">
-			<Filter>Source\unreal_learn_code</Filter>
-		</None >
-		<Filter Include="Source\unreal_learn_code\Private">
-			<UniqueIdentifier>{70C42212-716F-4F5A-8024-86DF8D4E7C58}</UniqueIdentifier>
-		</Filter>
-		<ClCompile Include="..\..\Source\unreal_learn_code\Private\BatteryPickup.cpp">
-			<Filter>Source\unreal_learn_code\Private</Filter>
-		</ClCompile >
-		<ClCompile Include="..\..\Source\unreal_learn_code\Private\HeightMapReader.cpp">
-			<Filter>Source\unreal_learn_code\Private</Filter>
-		</ClCompile >
-		<ClCompile Include="..\..\Source\unreal_learn_code\Private\Pickup.cpp">
-			<Filter>Source\unreal_learn_code\Private</Filter>
-		</ClCompile >
-		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_code.cpp">
-			<Filter>Source\unreal_learn_code\Private</Filter>
-		</ClCompile >
-		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeCharacter.cpp">
-			<Filter>Source\unreal_learn_code\Private</Filter>
-		</ClCompile >
-		<ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeGameMode.cpp">
-			<Filter>Source\unreal_learn_code\Private</Filter>
-		</ClCompile >
-		<Filter Include="Source\unreal_learn_code\Public">
-			<UniqueIdentifier>{E39C1B07-7018-4A20-850F-1A8B195BEC7A}</UniqueIdentifier>
-		</Filter>
-		<ClInclude Include="..\..\Source\unreal_learn_code\Public\BatteryPickup.h">
-			<Filter>Source\unreal_learn_code\Public</Filter>
-		</ClInclude >
-		<ClInclude Include="..\..\Source\unreal_learn_code\Public\HeightMapReader.h">
-			<Filter>Source\unreal_learn_code\Public</Filter>
-		</ClInclude >
-		<ClInclude Include="..\..\Source\unreal_learn_code\Public\Pickup.h">
-			<Filter>Source\unreal_learn_code\Public</Filter>
-		</ClInclude >
-		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_code.h">
-			<Filter>Source\unreal_learn_code\Public</Filter>
-		</ClInclude >
-		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_codeCharacter.h">
-			<Filter>Source\unreal_learn_code\Public</Filter>
-		</ClInclude >
-		<ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_codeGameMode.h">
-			<Filter>Source\unreal_learn_code\Public</Filter>
-		</ClInclude >
-		<Filter Include="Source\unreal_learn_code\Resources">
-			<UniqueIdentifier>{A58C3012-58E9-46BF-8A15-AF998C4B2848}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="Source\unreal_learn_code\Resources\Windows">
-			<UniqueIdentifier>{502B52B3-8814-4AD0-A8BF-D9517DBBE1D3}</UniqueIdentifier>
-		</Filter>
-		<None Include="..\..\Source\unreal_learn_code\Resources\Windows\unreal_learn_code.ico">
-			<Filter>Source\unreal_learn_code\Resources\Windows</Filter>
-		</None >
-		<ResourceCompile Include="..\..\Source\unreal_learn_code\Resources\Windows\unreal_learn_code.rc">
-			<Filter>Source\unreal_learn_code\Resources\Windows</Filter>
-		</ResourceCompile >
-	</ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\unreal_learn_code.uproject" />
+    <Filter Include="Source">
+      <UniqueIdentifier>{DD75FDFD-8CB3-4A50-8705-4F2B0649D36A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\unreal_learn_code.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <None Include="..\..\Source\unreal_learn_codeEditor.Target.cs">
+      <Filter>Source</Filter>
+    </None>
+    <Filter Include="Config">
+      <UniqueIdentifier>{44FD6126-97FB-4E76-8777-6E78F2EC3C8A}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Config\DefaultEditor.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultEngine.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultGame.ini">
+      <Filter>Config</Filter>
+    </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
+    <Filter Include="Plugins">
+      <UniqueIdentifier>{9CA9AF41-B3D0-4B38-9F4F-817BF7D7EE41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\unreal_learn_code">
+      <UniqueIdentifier>{F493CC74-3E3D-44B8-AF53-3B31F147241F}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\unreal_learn_code\unreal_learn_code.Build.cs">
+      <Filter>Source\unreal_learn_code</Filter>
+    </None>
+    <Filter Include="Source\unreal_learn_code\Private">
+      <UniqueIdentifier>{E5F6DAC0-8128-4162-82F5-3C9C6A669DC9}</UniqueIdentifier>
+    </Filter>
+    <ClCompile Include="..\..\Source\unreal_learn_code\Private\BatteryPickup.cpp">
+      <Filter>Source\unreal_learn_code\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\unreal_learn_code\Private\Pickup.cpp">
+      <Filter>Source\unreal_learn_code\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_code.cpp">
+      <Filter>Source\unreal_learn_code\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeCharacter.cpp">
+      <Filter>Source\unreal_learn_code\Private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\unreal_learn_code\Private\unreal_learn_codeGameMode.cpp">
+      <Filter>Source\unreal_learn_code\Private</Filter>
+    </ClCompile>
+    <Filter Include="Source\unreal_learn_code\Public">
+      <UniqueIdentifier>{4FC5ABF5-6E43-4E8A-8EED-49924382FB4C}</UniqueIdentifier>
+    </Filter>
+    <ClInclude Include="..\..\Source\unreal_learn_code\Public\BatteryPickup.h">
+      <Filter>Source\unreal_learn_code\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\unreal_learn_code\Public\Pickup.h">
+      <Filter>Source\unreal_learn_code\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_code.h">
+      <Filter>Source\unreal_learn_code\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_codeCharacter.h">
+      <Filter>Source\unreal_learn_code\Public</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\unreal_learn_code\Public\unreal_learn_codeGameMode.h">
+      <Filter>Source\unreal_learn_code\Public</Filter>
+    </ClInclude>
+    <Filter Include="Source\unreal_learn_code\Resources">
+      <UniqueIdentifier>{A2B9630E-C5B4-4A38-8AFF-D13ADF132A5B}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\unreal_learn_code\Resources\Windows">
+      <UniqueIdentifier>{98799677-29F3-4B21-9858-FE5C86503E10}</UniqueIdentifier>
+    </Filter>
+    <None Include="..\..\Source\unreal_learn_code\Resources\Windows\unreal_learn_code.ico">
+      <Filter>Source\unreal_learn_code\Resources\Windows</Filter>
+    </None>
+    <ResourceCompile Include="..\..\Source\unreal_learn_code\Resources\Windows\unreal_learn_code.rc">
+      <Filter>Source\unreal_learn_code\Resources\Windows</Filter>
+    </ResourceCompile>
+  </ItemGroup>
 </Project>
